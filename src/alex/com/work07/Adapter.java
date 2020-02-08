@@ -43,7 +43,7 @@ public class Adapter extends Device {
     public int hashCode() {
         int result = 17;
         result = super.hashCode();
-        result = (31 * result) + mac.hashCode();
+        result = 31 * result + mac.hashCode();
         result = 37 * result + (int)(speed - (speed >>> 32));
         return result;
     }
